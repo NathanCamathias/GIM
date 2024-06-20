@@ -9,7 +9,7 @@ https://nathancamathias.github.io/GIM/Esercizio_1A/acceso_spento_3.html
 https://nathancamathias.github.io/GIM/Esercizio_1A/aperto_chiuso_2.html
 https://nathancamathias.github.io/GIM/Esercizio_1A/aperto_chiuso_3.html
 
-https://nathancamathias.github.io/GIM/Esercizio_1A/rotarione_2.html
+https://nathancamathias.github.io/GIM/Esercizio_1A/rotazione_2.html
 https://nathancamathias.github.io/GIM/Esercizio_1A/rotazione_3.html
 
 https://nathancamathias.github.io/GIM/Esercizio_1A/spostamento_2.html
