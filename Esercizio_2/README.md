@@ -22,7 +22,7 @@ Pubblicare l’esercizio sulla piattaforma GitHub e pubblicare il link a github.
 GIM/esercizio_2  	
 	/img  (cartella con le sequenze, organizzata liberamente)  
 	/js   (cartella con la libreria)  
-	inxex.html  
+	index.html  
 	...
 ``` 
 
