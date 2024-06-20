@@ -1,31 +1,93 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orologio Analogico con Testi di Dua Lipa</title>
+    <title>Orologio Analogico moderno - Cama</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
+            margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            background: #000;
+            background: linear-gradient(135deg, #b51010, #0fa0e3);
+            font-family: 'Roboto', sans-serif;
             overflow: hidden;
-            font-family: 'Arial', sans-serif;
         }
-        canvas {
+
+        #clock-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 10px solid rgba(0, 0, 0, 0.3);
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(238, 255, 2, 0.5);
+        }
+
+        .hand {
             position: absolute;
+            width: 50%;
+            height: 6px;
+            background: #fff;
+            top: 50%;
+            left: 50%;
+            transform-origin: 0% 50%;
+            transform: rotate(90deg);
+            transition: transform 0.5s cubic-bezier(0.4, 2.3, 0.3, 1);
         }
-        #clock {
-            z-index: 10;
+
+        #hour {
+            height: 9px;
+            width: 25%;
+            background: #ff4b1f;
+        }
+
+        #minute {
+            height: 7px;
+            width: 35%;
+            background: #1fddff;
+        }
+
+        #second {
+            height: 3px;
+            width: 45%;
+            background: #fff;
+        }
+
+        .center {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background: #fff;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes neon {
+            0%, 100% {
+                box-shadow: 0 0 20px #ff4b1f, 0 0 30px #ff4b1f, 0 0 40px #ff4b1f, 0 0 50px #ff4b1f, 0 0 60px #ff4b1f, 0 0 70px #ff4b1f;
+            }
+            50% {
+                box-shadow: 0 0 10px #1fddff, 0 0 20px #1fddff, 0 0 30px #1fddff, 0 0 40px #1fddff, 0 0 50px #1fddff, 0 0 60px #1fddff;
+            }
+        }
+
+        #clock-container {
+            animation: neon 2s infinite alternate;
         }
     </style>
 </head>
 <body>
-    <canvas id="background"></canvas>
-    <canvas id="clock" width="400" height="400"></canvas>
+    <div id="clock-container">
+        <div id="hour" class="hand"></div>
+        <div id="minute" class="hand"></div>
+        <div id="second" class="hand"></div>
+        <div class="center"></div>
+    </div>
     <script src="clock.js"></script>
 </body>
 </html>
